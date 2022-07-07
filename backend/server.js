@@ -1,4 +1,4 @@
-console.log("Hellow Word")
+console.log("Hello Azis")
 const express = require('express')
 const dotenv = require('dotenv').config()
 const port = process.env.PORT || 5000
