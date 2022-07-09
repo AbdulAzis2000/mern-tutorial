@@ -11,6 +11,8 @@ module.exports = {
 //@route POST /api/goals
 //acces Private
 const setGoal = (req,res) => {
-    console.log(req.body)
+    if(!req.body.text){
+        res.status(400).json({message: 'Please add a text filed'})
+    }
 res.status(200).json({message: 'Get Goals'})
 }
