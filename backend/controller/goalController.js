@@ -1,9 +1,11 @@
+const asynHandler = require(`express-async-handler`)
 //@desc Get goals
 //@route GET /api/goals
 //@acces Private
-const getGoals = (req,res) => {
+
+const getGoals = asynHandler (async (req,res) => {
     res.status(200).json({message: 'Get Goals'})
-}
+})
 module.exports = {
     getGoals
 }
